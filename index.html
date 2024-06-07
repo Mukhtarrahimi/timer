@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font-awesome cdn  -->
     <link
@@ -16,6 +17,21 @@
     <title>timer</title>
   </head>
   <body>
+    <div class="container">
+      <h1 class="title">Timer</h1>
+      <h1 id="date">00:00:00</h1>
+      <div class="btn-box">
+        <div id="restart" onclick="timerestart()">
+          <i class="fa fa-repeat" aria-hidden="true"></i>
+        </div>
+        <div id="play" onclick="timeStart()">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+        <div id="stop" onclick="stoptime()">
+          <i class="fa fa-stop" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
